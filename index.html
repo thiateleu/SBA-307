@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA307 - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        ul { 
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .highlight { 
+            color: green; 
+        }
+
+        .horizontal-nav a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .horizontal-nav a.active {
+            font-weight: bold;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <nav style="font-size: 40px; background-color: green;" class="topnav" id="myTopnav">
+            <ul>
+                <li><a class="active"  href="index.html">HOME</a></li>
+                <li><a href="pages/about.html">ABOUT</a></li>
+                <li><a href="pages/contact.html">CONTACT</a></li>
+                <li><a href="pages/Book Now.html">BOOK NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 style="font-size:40px;"> Welcome to Thiateleu Cleaning</h1>
+            <p style="font-size:30px;" class="highlight">Your trusted cleaning service provider.</p>
+            <img src="https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg" alt="White Bathroom Interior" width="1229" height="615">
+            <p style="font-size:25px;">We offer top cleaning services for homes and offices. Our team is dedicated to making your space shine.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <img src="https://www.motionelements.com/stock-video-18919359-free-gift-price-tag-red-label-motion-graphics?query_id=fd189b72-2796-42b9-bb56-1abd24beedf1&position=8" alt="GIF">
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Residential Cleaning</td>
+                    <td>Comprehensive cleaning services for your home.</td>
+                </tr>
+                <tr>
+                    <td>Commercial Cleaning</td>
+                    <td>Professional cleaning for offices and commercial spaces.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form action="submit-form.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="service">Service:</label>
+                <select id="service" name="service">
+                    <option value="residential">Residential Cleaning</option>
+                    <option value="commercial">Commercial Cleaning</option>
+                </select><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Thiateleu Cleaning </p>
+    </footer>
+</body>
+</html>
